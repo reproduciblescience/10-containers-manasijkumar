@@ -22,7 +22,7 @@ At this point we could actually skip right to the Binder section below (Binder o
 ## Create Dockerfile
 Use holepunch to generate a Dockerfile using:
 ```{r}
-write_dockerfile(maintainer = "Your name") 
+write_dockerfile(maintainer = "ManasiJayakumar") 
 ```
 This creates a Dockerfile inside a hidden directory .binder/. Inspect this Dockerfile to see what it looks like (you may need to use terminal to get inside this directory). Note the first FROM line - what is its purpose? The rest of the Dockerfile contains instructions to copy all the files in this directory into the image, and also to install all dependencies in the Description file.
 
@@ -32,6 +32,9 @@ If you have Docker installed on your computer, you can build a Docker image from
 To make it easier for us and others to run this Docker image on Binder, we can generate a "badge" link. Use `generate_badge()` to create a badge that can be pasted into this Readme.
 Paste generated code here:
 
+<!-- badges: start -->
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/reproduciblescience/10-containers-manasijkumar/master?urlpath=rstudio)
+<!-- badges: end -->
 
 
 Now add all the files in this directory to your git repository (remember to include the .binder/Dockerfile as well - use `git status` to confirm you got everything) and push to GitHub. Then in your browser go into the Settings of your GitHub repo and make it public, so that it will be visible to Binder.
