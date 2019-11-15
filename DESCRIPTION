@@ -1,0 +1,20 @@
+Type: Compendium
+Package: Squirrels_topic_modeling
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Manasi",
+           family = "Jayakumar",
+           role = c("aut", "cre"),
+           email = "manasi.jayakumar@columbia.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This is for topic modeling of squirrels
+    dataset
+License: Whatever you want
+Depends: 
+    rmarkdown,
+    tidyverse,
+    tm,
+    topicmodels
+Encoding: UTF-8
+LazyData: true
